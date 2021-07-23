@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Corpo Estetica</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Texturina:ital,wght@0,100&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header class="cabecera">
+        <a id="nombre" class="logo" href="#fila3y4-6imagnes"> <img src="imagenes/imagen.logo.jpg" alt="logo de corpo estetica" title="Inicio"></a>
+        <nav id="botonera-principal" class="navflex">
+            <ul>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="presupuesto.html">Presupuesto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+     
+    </header>
+    
+    <!-- ___ enlazado con js/banner.js___ -->
+    <section>   
+        <div id="cerrarBanner">
+           <p>Buscanos en:</p>
+           <p>Face: corpo Estetica Belgrano</p>
+           <p>insta: corpo Estetica</p>
+           <p>WSP: 111-1111-111</p> 
+           <button id="banner"  onClick="cerrarBanner('cerrar')" > <img src="imagenes/letra-x.png" alt=""> </button> 
+        </div>
+
+        <!-- enlazado con js/nuevoTexto.js elemento 3-->
+        <div id="elemento3"></div>
+        <figure id="fila1-3imagenes">
+            <div id="fila1-izq">
+                <img src="imagenes/imagen38.jpg" alt="tratamiento corporal">
+        <!-- enlazado con js/subtitulos.js elemento 5-->
+                <h3 class="subtitulo"> Tratamiento Corporal</h3>  
+            </div>
+
+            <div id="fila1-centro">
+                <img src="imagenes/imagen8.jpg" alt="tratamiento facial">
+                <h3 class="subtitulo">Tratamiento Facial</h3>
+            </div>
+
+            <div id="fila1-der">
+                <img src="imagenes/imagen7.jpg" alt="aparatologia">
+                <h3 class="subtitulo">Aparatologia</h3>
+            </div>
+        </figure>
+    
+        <div id="fila2-mensaje">
+            <p>Veni a reducir, modelar y tonificar tu cuerpo</p>
+        </div>
+
+        <figure id="fila3y4-6imagnes">
+            <div id="fila3-izq">
+                <img src="imagenes/imagen14.jpg" alt=""> 
+            </div>
+            <div id="fila3-centro">
+                <img src="imagenes/imagen15.jpg" alt="">
+            </div>
+            <div id="fila3-der">
+                <img src="imagenes/imagen11.jpg" alt="">    
+            </div>
+            <div id="fila4-izq">
+                <img src="imagenes/imagen9.jpg" alt=""> 
+            </div>
+            <div id="fila4-centro">
+                <img src=" imagenes/imagen10.jpg" alt="">
+            </div>
+            <div id="fila4-der">
+                <img src="imagenes/imagen12.jpg" alt=""> 
+            </div>
+        </figure>
+       
+        <div id="fila-5">
+           <iframe class="goggle-maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.703755181076!2d-58.450009885022205!3d-34.56105538047051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5cc24d1fc25%3A0x449971610262b49b!2sLa%20Pampa%20%26%20Arribe%C3%B1os%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1605969984195!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+
+    </section>
+
+    <footer id="pie">
+        <address class="contacto">
+            <ul class="contacto-lista"> 
+                <li>
+                    <canvas id="lienzo1" width="50" height="30">
+                        Su navegador no soporta el elemento canvas
+                    </canvas>
+                    corpoestetica@hotmail.com  
+                 </li>
+
+                <li>
+                    <canvas id="lienzo2" width="50" height="30">
+                        Su navegador no soporta el elemento canvas
+                    </canvas>
+                    Barrancas de Belgrano
+                   </li>
+                <li>
+                    <canvas id="lienzo3" width="50" height="30">
+                        Su navegador no soporta el elemento canvas
+                    </canvas>
+                    111 111 1111
+                    </li>
+            </ul>
+        </address>
+
+        <div id="redes">
+            <nav class="botonera-secundaria">
+                <ul>
+                    <li class="facebook"><a class="enlace-facebook" href="https://www.facebook.com/corpoesteticabelgrano">
+                        <img class="imagen-face" src="imagenes/facebook.jpg" alt="pagina de facebook"></a></li>
+
+                    <li class="instagram">
+                        <img class="imagen-insta" src="imagenes/instagram.jpg" alt="pagina de instagram"></li>
+
+                     <li class="whatsapp">
+                        <img class="imagen-wsp" src="imagenes/wsp.jpg" alt="numero de whatsapp"></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="legal">
+            <p>Derechos Reservados - patry 2020</p>
+        </div>
+    </footer>   
+    <script src="js/canvas.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript"></script>
+    <script src="js/banner.js" type="text/javascript"></script>
+    <script src="js/nuevoTexto.js" type="text/javascript"></script>
+    <script src="js/subtitulos.js" type="text/javascript"></script>
+      
+</body>
+</html>

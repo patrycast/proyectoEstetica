@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Texturina:ital,wght@0,100&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="iconos.css">
+</head>
+<body>
+    <header class="cabecera">
+        <a class="logo" href="index.html"> <img src="imagenes/imagen.logo.jpg" alt="logo de corpo estetica" title="corpo estetica"></a>
+      
+        <nav id="botonera-principal">
+            <ul>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="presupuesto.html">Presupuesto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>  
+            </ul>
+        </nav> 
+    </header>
+
+    <section class="seccionContacto">
+        <div id="animacion">
+        <h1>Contactanos:</h1>
+        <img src="imagenes/imagen.logo.svg" width="100" height="60" alt="logo" id="logo">
+        <!-- animateMotion -->
+        <svg width="250" height="55" viewBox="0 0 400 200">
+            <circle cx="15" cy="45" r="30" id="ca2" fill="#ff00ff" ></circle >
+            <path id="bezier" d="m25,50 q80,150 175,50 t180,25" fill="#ff00ff"></path>
+            <ellipse cx="10" cy="-20" rx="25" ry="15" fill="#F781F3" stroke="#6A0888" stroke-width="3"> 
+                
+            <animateMotion begin="0s" dur="5s" rotate="auto" repeatCount="indefinite">
+            <mpath xlink:href="#bezier" ></mpath>
+            </animateMotion>
+        </svg>
+    </div>   
+        <!--se enlaza con contacto.js-->
+        <div id="fondo-de-imagen" class="fondo-de-imagen"></div>
+        <div class="seccion-contenedor">
+            <form  action="#" method="POST" class="formulario" id="formulario" name="formulario" >
+                <label for="nombre">Nombre y Apellido*:</label>
+                <input  type="text" id="nombre" class="form1" placeholder="Ingrese Nombre y Apellido" minlength="3" maxlength="50">
+                <label for="email">E-mail*:</label>
+                <input type="email" id="email" class="form1"  placeholder="Ingrese E-mail" minlength="10" maxlength="40">
+                <label for="telefono">Telefono*:</label>
+                <input  type="tel" id="telefono" class="form1" placeholder="Ingrese Numero de Telefono" minlength="8"  maxlength="15" >
+                <label for="mensaje">Mensaje:</label>
+                <textarea class="mensaje" id="mensaje" placeholder="Deja aqui tu Mensaje..." maxlength="50"></textarea>
+                <input type="submit" id="boton" class="boton">
+            </form>
+        </div>
+   
+        <div id="video"> 
+            <p id="parrafo">CUIDAMOS TU PIEL</p>
+            <video id="mivideo" src="imagenes/video1.mp4"></video>
+      </div>
+          
+        <nav>
+        <div id="controles">
+            <button class="controles" type="button" id="reproducir" onclick="reproducir()"><span class="icon-play2"></span></button> 
+            <button  class="controles" type="button" id="frenar" onclick="detener()"><span class="icon-stop"></span></button> 
+            <button  class="controles" type="button" id="atras" onclick="saltar(-4)"><span class="icon-previous"></span></button> 
+            <button  class="controles" type="button" id="adelante" onclick="saltar(4)"><span class="icon-next"></span></button>     
+        </div>
+       </nav>
+
+       <div id="parrafo-final">
+        <p>Elegí tu tratamiento ideal</p>
+    </div>
+    </section>
+
+    <footer id="pie">
+        <address class="contacto">
+            <ul class="contacto-lista">
+                <li>
+                    <canvas id="lienzo1" width="50" height="30">
+                        Su navegador no soporta el elemento canvas
+                    </canvas>
+                    corpoestetica@hotmail.com  
+                 </li>
+
+                <li>
+                    <canvas id="lienzo2" width="50" height="30">
+                        Su navegador no soporta el elemento canvas
+                    </canvas>
+                    Barrancas de Belgrano
+                   </li>
+                <li>
+                    <canvas id="lienzo3" width="50" height="30">
+                        Su navegador no soporta el elemento canvas
+                    </canvas>
+                    111 111 1111
+                    </li>
+            </ul>
+        </address>
+       
+
+            <div id="redes">
+                <nav class="botonera-secundaria">
+                    <ul>
+                        <li class="facebook"><a class="enlace-facebook" href="https://www.facebook.com/corpoesteticabelgrano">
+                            <img class="imagen-face" src="imagenes/facebook.jpg" alt="pagina de facebook"></a></li>
+    
+                        <li class="instagram">
+                            <img class="imagen-insta" src="imagenes/instagram.jpg" alt="pagina de instagram"></li>
+    
+                         <li class="whatsapp">
+                            <img class="imagen-wsp" src="imagenes/wsp.jpg" alt="numero de whatsapp"></li>
+                    </ul>
+                </nav>
+            </div>
+        <div id="legal">
+            <p>Derechos Reservados - patry 2020</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/contacto.js"></script>
+    <script type="text/javascript" src="js/validarForm.js"></script>
+    <script type="text/javascript" src="js/video.js"></script>
+    <script src="js/canvas.js"></script>
+</body>
+</html>
