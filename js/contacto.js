@@ -9,13 +9,13 @@
 var descuento=prompt('Selecciona el tipo de descuento que deseas obtener: CORPORAL/FACIAL/APARATOLOGIA')
     descuento=descuento.toLowerCase();
     if(descuento=='corporal'){
-        elemento1.innerHTML='<p> Tratamiento '+descuento + ': Obtenes un descuento del 10% antes del 6/2021</p>'
+        elemento1.innerHTML='<p> Tratamiento '+descuento + ': Obtenes un descuento del 10% antes del 12/2021</p>'
     }
     else if(descuento=='facial'){
-        elemento1.innerHTML='<p> Tratamiento '+descuento + ': Obtenes un descuento del 15% antes del 6/2021</p>'
+        elemento1.innerHTML='<p> Tratamiento '+descuento + ': Obtenes un descuento del 15% antes del 12/2021</p>'
     }
     else if(descuento=='aparatologia'){
-        elemento1.innerHTML='<p> Tratamiento '+descuento +': Obtenes un descuento del 20% antes del 6/2021</p>'   
+        elemento1.innerHTML='<p> Tratamiento '+descuento +': Obtenes un descuento del 20% antes del 12/2021</p>'   
     } 
     else{
         elemento1.innerHTML='<p>Ingrese una opcion valida por favor<p>'
