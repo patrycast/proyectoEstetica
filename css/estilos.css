@@ -579,7 +579,8 @@ section{
 }
 h1{
     font-size:30px;
-    text-align:center;
+    /* text-align:center; */
+    padding-left: 6rem;
 }
 .caja-contenedora{
     display:flex;  
@@ -1525,12 +1526,12 @@ section h1{
 }
 #logo{   
     display:inline; 
-    width:8rem;
+    width:5rem;
     height:3rem;
     animation:logo ease-in-out 5s infinite;
     -webkit-animation:logo ease-in-out 5s infinite;  
     margin-top:20px;
-    margin-left:90px;
+    margin-left:1rem;
 }  
 svg{
     width:150px;
