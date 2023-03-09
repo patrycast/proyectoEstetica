@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Servicios</title>
-    <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Texturina:ital,wght@0,100&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="css/estilos.css" as="style">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <header class="cabecera">
-        <a class="logo" href="index.html"> <img src="imagenes/imagen.logo.jpg" alt="logo de corpo estetica" title="Inicio"></a>
+        <a class="logo" href="index.html"> <img loading="lazy" src="imagenes/imagen.logo.webp" alt="logo de corpo estetica" title="Inicio"></a>
         
         <nav id="botonera-principal">
             <ul>
@@ -26,7 +32,7 @@
         <div class="caja-contenedora">
             <div class="caja1">
                 <figure>
-                    <img src="imagenes/electrodos.jpg" alt="tratamiento electrodos">
+                    <img loading="lazy" src="imagenes/electrodos.webp" alt="tratamiento electrodos">
                 </figure>
                     <h2>Electrodos:</h2>
                     <p>Se realiza mediante electroestimulación a las terminales nerviosas 
@@ -38,7 +44,7 @@
             </div> 
             <div class="caja2">
                 <figure>
-                    <img src="imagenes/cavitacion.jpg" alt="tratamiento ultracavitacion">  
+                    <img loading="lazy" src="imagenes/cavitacion.webp" alt="tratamiento ultracavitacion">  
                 </figure>  
                     <h2>Ultracavitación:</h2>
                     <p> Trata la adiposidad localizada difícil de erradicar con dietas y ejercicios. Rompe las células grasas. Trata adipocidad localizada. Destruye el adipocito por colapso de forma no invasiva
@@ -50,7 +56,7 @@
             </div>     
             <div class="caja3">
                 <figure>
-                    <img src="imagenes/radiofrecuencia.jpg" alt="tratamiento radiofrecuencia"> 
+                    <img loading="lazy" src="imagenes/radiofrecuencia.webp" alt="tratamiento radiofrecuencia"> 
                 </figure>
                     <h2>Radiofrecuencia:</h2> 
                     <p>Es un tratamiento indoloro que regenera el colágeno y la elastina. Producen efecto lifting. Combate la flacidez y la celulitis. Consiste 
@@ -62,7 +68,7 @@
             </div>
             <div class="caja4">
                 <figure>
-                    <img src="imagenes/vendasfrias.jpg" alt="tratamiento vendas frias"> 
+                    <img loading="lazy" src="imagenes/vendasfrias.webp" alt="tratamiento vendas frias"> 
                 </figure>  
                     <h2>Vendas Frias:</h2>
                     <p>Consiste en la aplicación de frio que actua provocando un descenso de temperatura corporal. De esta
@@ -114,14 +120,14 @@
             <div id="redes">
                 <nav class="botonera-secundaria">
                     <ul>
-                        <li class="facebook"><a class="enlace-facebook" href="https://www.facebook.com/corpoesteticabelgrano">
-                            <img class="imagen-face" src="imagenes/facebook.jpg" alt="pagina de facebook"></a></li>
+                        <li class="facebook"><a class="enlace-facebook" href="https://www.facebook.webp/corpoesteticabelgrano">
+                            <img loading="lazy" class="imagen-face" src="imagenes/facebook.webp" alt="pagina de facebook"></a></li>
     
                         <li class="instagram">
-                            <img class="imagen-insta" src="imagenes/instagram.jpg" alt="pagina de instagram"></li>
+                            <img loading="lazy" class="imagen-insta" src="imagenes/instagram.webp" alt="pagina de instagram"></li>
     
                          <li class="whatsapp">
-                            <img class="imagen-wsp" src="imagenes/wsp.jpg" alt="numero de whatsapp"></li>
+                            <img loading="lazy" class="imagen-wsp" src="imagenes/wsp.webp" alt="numero de whatsapp"></li>
                     </ul>
                 </nav>
             </div>

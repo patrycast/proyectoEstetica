@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Presupuesto</title>
-    <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Texturina:ital,wght@0,100&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="css/estilos.css" as="style">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
     <header class="cabecera">
-        <a class="logo" href="index.html"> <img src="imagenes/imagen.logo.jpg" alt="logo de corpo estetica" title="corpo estetica"></a>
+        <a class="logo" href="index.html"> <img loading="lazy"src="imagenes/imagen.logo.webp" alt="logo de corpo estetica" title="corpo estetica"></a>
         <nav id="botonera-principal">
             <ul>
                 <li><a href="servicios.html">Servicios</a></li>
@@ -25,7 +31,7 @@
             <div id="caja-soltar"> Arrastre y suelte la imagen aquí
             </div>         
             <div id="caja-presu">
-                <img id="img-presu" src="imagenes/presu1.jpg" alt="icono presupuesto">
+                <img loading="lazy" id="img-presu" src="imagenes/presu1.webp" alt="icono presupuesto">
             </div>
             <h2 class="primer-texto"><b>Envia tus datos asi te asesoramos en el tratamiento más conveniente para vos</b></h2>
         </div> 
@@ -70,12 +76,12 @@
 
         <!--J QUERY: Mostrar miniaturas de imágenes sobre los enlaces y al hacer click lleva a la img en otra pagina  -->
         <figure class="columna-2">
-            <a href="imagenes/volante1.jpg" class="thumb texto-img-final" target="_blank"> Promos de verano!!</a> <img class="imagen-final1" src="imagenes/imagen22.jpg" alt="">    
+            <a href="imagenes/volante1.webp" class="thumb texto-img-final" target="_blank"> Promos de verano!!</a> <img loading="lazy" class="imagen-final1" src="imagenes/imagen22.webp" alt="">    
         </figure>
         <!-- J QUERY  -->
         <figure class="columna2-b">
-            <a href="imagenes/volante.jpg" class="thumb" target="_blank">nueva promo spa</a>
-            <img class="imagen-final2" src="imagenes/spa.jpg" alt="">
+            <a href="imagenes/volante.webp" class="thumb" target="_blank">nueva promo spa</a>
+            <img loading="lazy" class="imagen-final2" src="imagenes/spa.webp" alt="">
             <figcaption class="texto-final2"> <br>contactanos para mas info</figcaption>
         </figure>
 
@@ -145,13 +151,13 @@
                 <nav class="botonera-secundaria">
                     <ul>
                         <li class="facebook"><a class="enlace-facebook" href="https://www.facebook.com/corpoesteticabelgrano">
-                            <img class="imagen-face" src="imagenes/facebook.jpg" alt="pagina de facebook"></a></li>
+                            <img loading="lazy" class="imagen-face" src="imagenes/facebook.webp" alt="pagina de facebook"></a></li>
     
                         <li class="instagram">
-                            <img class="imagen-insta" src="imagenes/instagram.jpg" alt="pagina de instagram"></li>
+                            <img loading="lazy" class="imagen-insta" src="imagenes/instagram.webp" alt="pagina de instagram"></li>
     
                          <li class="whatsapp">
-                            <img class="imagen-wsp" src="imagenes/wsp.jpg" alt="numero de whatsapp"></li>
+                            <img loading="lazy" class="imagen-wsp" src="imagenes/wsp.webp" alt="numero de whatsapp"></li>
                     </ul>
                 </nav>
             </div>

@@ -1,8 +1,8 @@
   
  /**validacion de formulario: setCustomValidity() */
- var nombre=document.getElementById('nombre')
- var email=document.getElementById('email')
- var tel=document.getElementById('telefono')
+ const nombre=document.getElementById('nombre')
+ const email=document.getElementById('email')
+ const tel=document.getElementById('telefono')
 
  function validarDatos(){
      nombre.addEventListener('input', validarNombre);

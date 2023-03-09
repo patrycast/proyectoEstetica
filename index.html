@@ -2,14 +2,28 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Corpo Estetica</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <title>Corpo Estética</title>
+    
     <link href="https://fonts.googleapis.com/css2?family=Texturina:ital,wght@0,100&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- prefetch -->
+    <link rel="prefetch" href="presupuesto.html">
+
+    <!-- preload -->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="css/estilos.css" as="style">
+    <link rel="stylesheet" href="css/estilos.css">
+
 </head>
 <body>
     <header class="cabecera">
-        <a id="nombre" class="logo" href="#fila3y4-6imagnes"> <img src="imagenes/imagen.logo.jpg" alt="logo de corpo estetica" title="Inicio"></a>
+        <a id="nombre" class="logo" href="#fila3y4-6imagnes"> 
+
+            <img loading="lazy" src="./imagenes/imagen.logo.webp" alt="logo de corpo estetica" title="Inicio"></a>
+
         <nav id="botonera-principal" class="navflex">
             <ul>
                 <li><a href="servicios.html">Servicios</a></li>
@@ -17,7 +31,6 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-     
     </header>
     
     <!-- ___ enlazado con js/banner.js___ -->
@@ -27,25 +40,27 @@
            <p>Face: corpo Estetica Belgrano</p>
            <p>insta: corpo Estetica</p>
            <p>WSP: 111-1111-111</p> 
-           <button id="banner"  onClick="cerrarBanner('cerrar')" > <img src="imagenes/letra-x.png" alt=""> </button> 
+           <button id="banner"  onClick="cerrarBanner('cerrar')" > 
+                <img loading="lazy" src="imagenes/letra-x.webp" alt="boton cerrar"> 
+            </button> 
         </div>
 
         <!-- enlazado con js/nuevoTexto.js elemento 3-->
         <div id="elemento3"></div>
         <figure id="fila1-3imagenes">
             <div id="fila1-izq">
-                <img src="imagenes/imagen38.jpg" alt="tratamiento corporal">
+                <img loading="lazy" src="imagenes/imagen38.webp" alt="boton cerrar">      
         <!-- enlazado con js/subtitulos.js elemento 5-->
                 <h3 class="subtitulo"> Tratamiento Corporal</h3>  
             </div>
 
             <div id="fila1-centro">
-                <img src="imagenes/imagen8.jpg" alt="tratamiento facial">
+                <img loading="lazy" src="imagenes/imagen8.webp" alt="boton cerrar"> 
                 <h3 class="subtitulo">Tratamiento Facial</h3>
             </div>
 
             <div id="fila1-der">
-                <img src="imagenes/imagen7.jpg" alt="aparatologia">
+                <img loading="lazy" src="imagenes/imagen7.webp" alt="boton cerrar"> 
                 <h3 class="subtitulo">Aparatologia</h3>
             </div>
         </figure>
@@ -56,22 +71,22 @@
 
         <figure id="fila3y4-6imagnes">
             <div id="fila3-izq">
-                <img src="imagenes/imagen14.jpg" alt=""> 
+                <img loading="lazy" src="imagenes/imagen14.webp" alt="foto facial"> 
             </div>
             <div id="fila3-centro">
-                <img src="imagenes/imagen15.jpg" alt="">
+                <img loading="lazy" src="imagenes/imagen15.webp" alt="foto facial"> 
             </div>
             <div id="fila3-der">
-                <img src="imagenes/imagen11.jpg" alt="">    
+                <img loading="lazy" src="imagenes/imagen11.webp" alt="foto facial"> 
             </div>
             <div id="fila4-izq">
-                <img src="imagenes/imagen9.jpg" alt=""> 
+                <img loading="lazy" src="imagenes/imagen9.webp" alt="foto corporal"> 
             </div>
             <div id="fila4-centro">
-                <img src=" imagenes/imagen10.jpg" alt="">
+                <img loading="lazy" src="imagenes/imagen10.webp" alt="foto corporal"> 
             </div>
             <div id="fila4-der">
-                <img src="imagenes/imagen12.jpg" alt=""> 
+                <img loading="lazy" src="imagenes/imagen12.webp" alt="foto corporal"> 
             </div>
         </figure>
        
@@ -110,13 +125,13 @@
             <nav class="botonera-secundaria">
                 <ul>
                     <li class="facebook"><a class="enlace-facebook" href="https://www.facebook.com/corpoesteticabelgrano">
-                        <img class="imagen-face" src="imagenes/facebook.jpg" alt="pagina de facebook"></a></li>
+                        <img loading="lazy" class="imagen-face" src="imagenes/facebook.webp" alt="pagina de facebook"></a></li>
 
                     <li class="instagram">
-                        <img class="imagen-insta" src="imagenes/instagram.jpg" alt="pagina de instagram"></li>
+                        <img loading="lazy" class="imagen-insta" src="imagenes/instagram.webp" alt="pagina de instagram"></li>
 
                      <li class="whatsapp">
-                        <img class="imagen-wsp" src="imagenes/wsp.jpg" alt="numero de whatsapp"></li>
+                        <img loading="lazy" class="imagen-wsp" src="imagenes/wsp.webp" alt="numero de whatsapp"></li>
                 </ul>
             </nav>
         </div>
