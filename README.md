@@ -1,3 +1,7 @@
-# proyectoEstetica
-Proyecto personal de Estetica.
-tecnologicas: HTML%, CSS3 y Javascript
+# Curso Professional FrontEnd Developer 👩‍💻
+## proyectoEstetica 💄👄
+### Tecnologías:
+- [x] HTML5
+- [x] CSS3
+- [x] Javascript
+
